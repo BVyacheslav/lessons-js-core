@@ -1,0 +1,88 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.person {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #000;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+	width: 800px;
+}
+.person__info {
+  display: flex;
+	flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.person__contacts {
+	/* добавьте ваш код  */
+}
+.person__details {
+	/* добавьте ваш код  */
+}
+.avatar {
+	margin-right: 2rem;
+}
+.avatar__picture {
+	width: 380px;
+	border-radius: 50%;
+	border: 32px solid white;
+}
+.contacts {
+
+}
+.contacts__name {
+	font-size: 32px;
+	font-weight: bold;
+
+}
+.contacts__role {
+	font-size: 19.2px;
+	font-weight: bold;
+  margin-bottom: 2rem;
+}
+.contacts__item {
+	font-style: italic;
+}
+.contacts__title {
+	font-weight: bold;
+}
+.contacts__title:after {
+	/* добавьте ваш код  */
+}
+.contacts__link {
+	color: gray;
+}
+.paragraph {
+	clear: both;
+	margin-bottom: 1rem;
+}
+.paragraph_last {
+	margin-bottom: 0rem;
+}
+
+@media (max-width : 767px) {
+	.person {
+		width: 300px;
+	}
+
+  .person__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+	.contacts__name {
+		text-align: center;
+	}
+	.contacts__role {
+		text-align: center;
+	}
+  }
