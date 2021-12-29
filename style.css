@@ -33,6 +33,10 @@ html {
 	width: 380px;
 	border-radius: 50%;
 	border: 32px solid white;
+  transition: 1s;
+}
+.avatar__picture:hover {
+  transform: rotate(180deg);
 }
 .contacts {
 display: flex;
