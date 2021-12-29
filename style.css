@@ -9,16 +9,19 @@ html {
 	font-size: 16px;
 	font-family: sans-serif;
 	color: #000;
-	padding-top: 32px;
-	padding-bottom: 48px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 	width: 800px;
-	margin: auto;
+  margin: auto;
 }
 .person__info {
-	/* добавьте ваш код  */
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 .person__contacts {
-	/* добавьте ваш код  */
+	margin-bottom: 2rem;
 }
 .person__details {
 	/* добавьте ваш код  */
@@ -30,12 +33,12 @@ html {
 	width: 380px;
 	border-radius: 50%;
 	border: 32px solid white;
-	float:left;
-	margin-right: 32px;
-    margin-bottom: 32px;
 }
 .contacts {
-	margin-top: 130px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;
 }
 .contacts__name {
 	font-size: 32px;
@@ -45,10 +48,10 @@ html {
 .contacts__role {
 	font-size: 19.2px;
 	font-weight: bold;
+  margin-bottom: 2rem;
 }
 .contacts__item {
 	font-style: italic;
-	margin-top: 32px;
 }
 .contacts__title {
 	font-weight: bold;
@@ -60,34 +63,24 @@ html {
 	color: gray;
 }
 .paragraph {
-	clear: both;
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 .paragraph_last {
-	/* добавьте ваш код  */
+	margin-bottom: 3rem;
 }
 
 @media (max-width : 767px) {
 	.person {
 		width: 300px;
-		padding-top: 16px;
 	}
-	.avatar__picture {
-		width: 100%;
-		float: none;
-		margin: 0;
-	}
-	.contacts {
-		margin-top: 16px;
-	}
+  .person__info {
+    display: flex;
+    flex-direction: column;
+  }
 	.contacts__name {
 		text-align: center;
 	}
 	.contacts__role {
 		text-align: center;
-	}
-	.contacts__item {
-		margin-top: 10px;
-		margin-bottom: 10px;
 	}
   }
